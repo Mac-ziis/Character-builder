@@ -14,12 +14,19 @@
 <body>
   <h1>Character Builder</h1>
   <form id="character">
+    
     <label for="input1">Strength: </label>
     <input id="input1" type="text">
     <label for="input2">Intelligence: </label>
     <input id="input2" type="text">
-  </form>
 
+  <select id="class">
+    <option>Warrior</option>
+    <option>Rogue</option>
+    <option>Mage</option>
+  </select>
+  
+  
   <label>
     <input type="radio" name="operator" value="thin">
     No muscles
@@ -31,6 +38,9 @@
   <input type="radio" name="operator" value="built">
     MUSCLES
   </label>
+  <button type="submit" class="button">Generate</button>
+  </form>
+  <h2>Your character</h2>
+  <p id="output"></p>
 </body>
-
 </html>
